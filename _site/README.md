@@ -1,2 +1,0 @@
-# TallgrassLabs.github.io
-Blog
