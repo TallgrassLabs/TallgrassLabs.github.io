@@ -3,18 +3,6 @@ label: Ghost Template
 hide_body: false
 fields:
 - type: text
-  name: layout
-  label: layout
-- type: text
-  name: current
-  label: current
-- type: file
-  name: cover
-  label: cover
-- type: boolean
-  name: navigation
-  label: navigation
-- type: text
   name: title
   label: title
 - type: datetime
@@ -24,13 +12,32 @@ fields:
   name: tags
   label: tags
 - type: text
+  name: author
+  label: author
+- type: file
+  name: cover
+  label: cover
+- type: boolean
+  name: navigation
+  label: navigation
+  default: true
+- type: text
+  name: layout
+  label: layout
+  default: post
+- type: text
+  name: current
+  label: current
+  config:
+    required: false
+  default: post
+- type: text
   name: class
   label: class
+  default: post-template
 - type: text
   name: subclass
   label: subclass
-- type: text
-  name: author
-  label: author
+  default: post
 pages:
 - _posts/2019-11-17-zevenheuvelenloop.md
