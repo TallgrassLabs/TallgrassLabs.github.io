@@ -5,9 +5,12 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: _data/tags.yml
+  label: Tags
+  match: "**/*"
+- type: document
   path: _data/authors.yml
   label: Authors
-  match: "**/*"
 - type: directory
   path: assets
   label: assets
